@@ -1,0 +1,25 @@
+{% include 'header.html' %}
+
+{% block content %}
+<body>
+<div class="container-fluid text-center">
+    <h1>Top 10 most prominent colors!</h1>
+    <h1>(RGB Values)</h1>
+    {% for color in colors %}
+    <div class="row card-row">
+        <div class="col-6 text-center column-row">
+                <div class="card text-center color-box" style="width: 40rem; background-color: rgb{{color}};">
+  <div class="card-body">
+      {% if color[0] > 200 and color[1] > 200 and color[2] > 200:%}
+      <h1 class="card-title text-center" style="color: #000000;">{{color}}</h1>
+      {% else %}
+    <h1 class="card-title text-center" style="color: #fff;">{{color}}</h1>
+      {% endif %}
+  </div>
+</div>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+</body>
+{% endblock %}

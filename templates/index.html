@@ -1,0 +1,20 @@
+{% include 'header.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block content %}
+<body>
+<div class="container">
+<h1 class="title text-center">Color Finder Keeper</h1>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-4 mx-auto text-center">
+            {{ wtf.quick_form(form, enctype="multipart/form-data", novalidate=True, button_map={"submit": "primary"}) }}
+        </div>
+    </div>
+</div>
+<div class="container text-center instructions">
+    <h3>Upload a picture, click the button, and see the top 10 most prominent colors (RGB)</h3>
+</div>
+</body>
+{% endblock %}
+</html>

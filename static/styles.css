@@ -1,0 +1,32 @@
+.navbar-brand {
+  font-size: 3rem;
+}
+
+body {
+  font-family: 'Fuzzy Bubbles', cursive;
+}
+
+h1 {
+  font-size: 5rem;
+  color: #DA2314;
+  font-weight: 700;``
+}
+
+.instructions {
+  margin-top: 50px;
+}
+
+#photo {
+  padding-left: 100px;
+  margin: 0 auto 0 auto;
+}
+
+.card-row {
+  text-align: center;
+  margin: 0 auto 0 auto;
+}
+
+.color-box {
+  text-align: center;
+  margin: 0 auto 0 auto;
+}
